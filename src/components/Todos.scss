@@ -1,0 +1,57 @@
+@import './colors.scss';
+
+.half {
+  flex: 1;
+
+  &.completed .item {
+    background-color: $completed;
+    color: white;
+
+    &::after {
+      content: ' ✓';
+      font-weight: bold;
+    }
+  }
+
+  &.discard h2 {
+    width: max-content;
+    position: relative;
+    
+    &::after {
+      content: '-';
+      right: -40px;
+      top: 0;
+      position: absolute;
+      text-align: center;
+      display: inline-block;
+      text-indent: 1px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: red;
+      color: white;
+      font-size: 3rem;
+      line-height: 1.4rem;
+      margin-left: .5rem;
+      vertical-align: -.3rem;
+    }
+  }
+
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    
+    .item {
+      cursor: pointer;
+      margin-right: .125rem;
+      margin-bottom: .125rem;
+      text-align: center;
+      flex-grow: 1;
+      flex-shrink: 0; 
+      padding: .5rem 1rem;
+      border-radius: 5px;  
+    }
+  }
+}

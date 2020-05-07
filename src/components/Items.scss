@@ -1,0 +1,13 @@
+.split {
+  display: flex;
+}
+
+.split .half {
+  &:first-child {
+    margin-right: 4rem;
+  }
+
+  &:last-child {
+    margin-left: 4rem;
+  }
+}

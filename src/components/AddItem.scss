@@ -1,0 +1,38 @@
+.create {
+  margin-bottom: 5rem;
+}
+
+.btn, .todo-input {
+  vertical-align: middle;
+}
+
+.todo-input {
+  font-size: 1rem;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  margin-right: .25rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  background: none;
+
+  &:active, &:focus {
+    outline: none;
+  }
+}
+
+.close {
+  line-height: 0;
+
+  span {
+    vertical-align: 8px;
+  }
+}

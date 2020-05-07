@@ -1,0 +1,22 @@
+@import './colors.scss';
+
+.wrapper {
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 6rem;
+}
+
+.prio-1 {
+  background-color: $prio-1;
+  color: white;
+}
+
+.prio-2 {
+  background-color: $prio-2;
+}
+
+.prio-3 {
+  background-color: $prio-3;
+}
