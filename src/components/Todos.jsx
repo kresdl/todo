@@ -29,8 +29,7 @@ const Todos = ({ todos, toggle, remove, discard, completed = false }) => {
     discard ? remove(index) : toggle(index);
   },
 
-    // Filter out complete/incomplete todos and preserve each item's index in reference list
-
+    // Filter out complete/incomplete todos and preserve each item's referential index.
     sel = extract.call(todos, (item, index) =>
       (!item.complete ^ completed) 
       && { ...item, index }
