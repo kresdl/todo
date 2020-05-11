@@ -1,13 +1,6 @@
 .split {
-  display: flex;
-}
-
-.split .half {
-  &:first-child {
-    margin-right: 4rem;
-  }
-
-  &:last-child {
-    margin-left: 4rem;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem 0rem;
+  gap: 2rem;
 }

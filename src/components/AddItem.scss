@@ -1,5 +1,5 @@
 .create {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .btn, .todo-input {
@@ -12,6 +12,17 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: 1px solid black;
+}
+
+.todo-input {
+  margin-bottom: 1rem;
+  vertical-align: middle;
+}
+
+.buttons {
+  display: inline-block;
+  margin-bottom: 1rem;
+  vertical-align: middle;
 }
 
 .btn {

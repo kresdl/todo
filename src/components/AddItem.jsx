@@ -21,7 +21,7 @@ const AddItem = ({ insert, setDiscard }) => {
       e.preventDefault();
       const em = e.target.elements.namedItem('todo');
 
-      insert({ 
+      insert({
         name: em.value,
         prio: prio.current
       });
@@ -31,32 +31,34 @@ const AddItem = ({ insert, setDiscard }) => {
 
   return (
     <form className="create" onSubmit={submit}>
-      <input 
-        className="todo-input" 
+      <input
+        className="todo-input"
         required
         name="todo"
         placeholder="New todo"
         autoComplete="off"
         autoFocus={true} />
-      {
-        [3, 2, 1].map(n => 
-          <button 
-            className={'btn prio-' + n} 
-            type="submit"
-            key={n}
-            data-prio={n}
-            onClick={add} >
-          </button>
-        )
-      }
-      <button 
-        className="btn close"
-        type="button"
-        onClick={discard} >
-        <span>
-          &times;
-        </span>
-      </button>
+      <div className="buttons">
+        {
+          [3, 2, 1].map(n =>
+            <button
+              className={'btn prio-' + n}
+              type="submit"
+              key={n}
+              data-prio={n}
+              onClick={add} >
+            </button>
+          )
+        }
+        <button
+          className="btn close"
+          type="button"
+          onClick={discard} >
+          <span>
+            &times;
+          </span>
+        </button>
+      </div>
     </form>
   );
 };
